@@ -1,0 +1,13 @@
+import * as fs from 'fs';
+
+const gitignoreContent = `# Ignorar a pasta node_modules
+node_modules/
+`;
+
+fs.writeFile('.gitignore', gitignoreContent, (err) => {
+  if (err) {
+    console.error('Erro ao criar o arquivo .gitignore:', err);
+  } else {
+    console.log('Arquivo .gitignore criado com sucesso!');
+  }
+});
