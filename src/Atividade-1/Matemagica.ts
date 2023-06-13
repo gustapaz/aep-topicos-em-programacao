@@ -57,11 +57,11 @@ export class Matemagica {
     this.b = b;
   }
 
-  public getA() {
+  public getA(): Number {
     return this.a;
   }
 
-  public getB() {
+  public getB(): Number {
     return this.b;
   }
 }

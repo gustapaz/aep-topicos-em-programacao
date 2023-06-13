@@ -1,6 +1,6 @@
 import { ProductType } from "./Types/product.type";
 
-export class ArrayRandomValue {
+export class ArrayRandomValues {
   private products: Array<ProductType>;
   private numberOfRandomValues: Number;
 
@@ -20,7 +20,7 @@ export class ArrayRandomValue {
     return this.getRandomObjects();
   }
 
-  private getRandomObjects() {
+  private getRandomObjects(): any {
     let result: any = [];
     while (result.length < this.numberOfRandomValues) {
       let randomIndex = Math.floor(Math.random() * this.products.length);
